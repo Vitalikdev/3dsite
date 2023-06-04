@@ -7,7 +7,7 @@ document.addEventListener('mousemove', e => {
     })
 })
 
-document.addEventListener('touchmove', e => {
+document.addEventListener('ontouchstart', e => {
     Object.assign(document.documentElement, {
         style: `
         --move-x: ${(e.clientX - window.innerWidth / 2) * -0.005}deg;
